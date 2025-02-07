@@ -1,0 +1,113 @@
+/* Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    /* Cores principais */
+    --primary-color: #FF6F00; /* Laranja vibrante */
+    --secondary-color: #E65100; /* Laranja escuro */
+    --accent-color: #2196F3; /* Azul Claro */
+    --highlight-color: #4CAF50; /* Verde Menta */
+    --warning-color: #FFEB3B; /* Amarelo Claro */
+    
+    /* Cores neutras */
+    --dark-gray: #212121; /* Preto suave */
+    --medium-gray: #757575; /* Cinza Médio */
+    --light-gray: #BDBDBD; /* Cinza Claro */
+    --off-white: #F5F5F5; /* Cinza Claro Neutro */
+    --white: #FFFFFF; /* Branco */
+
+    /* Tons complementares do laranja */
+    --light-orange: #FF9E40; /* Laranja Claro */
+    --soft-orange: #FFB74D; /* Laranja Suave */
+    --deep-orange: #BF360C; /* Laranja Profundo */
+
+    --white-color: #FFFFFF;
+    
+}
+
+body {
+    background-image: url('img/contruction-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.content-header{
+    position: relative; /* Garante que fiquem sobre a imagem */
+    z-index: 10; /* Garante que fiquem acima do fundo */
+    background: rgba(255, 255, 255, 0.8); 
+    backdrop-filter: blur(1px); /* Deixa o fundo embaçado */
+}
+
+.menu {
+    height: 5rem;
+    background-color: var(--dark-gray);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.menu-options {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+}
+
+.title-option {
+    font-size: 1.2rem;
+    color: var(--white-color);
+    margin: 0;
+    cursor: pointer;
+}
+
+.title-option:hover {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* Estilos para o botão moderno */
+.btn-option {
+    background-color: var(--primary-color); /* Cor laranja principal */
+    color: var(--white-color); /* Texto branco */
+    font-size: 1rem; /* Tamanho da fonte */
+    padding: 12px 24px; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    border-radius: 30px; /* Bordas arredondadas */
+    cursor: pointer; /* Apontador de clique */
+    transition: background-color 0.3s, transform 0.2s; /* Efeitos suaves de transição */
+    font-weight: 600; /* Texto mais forte */
+}
+
+/* Efeito de hover */
+.btn-option:hover {
+    background-color: #E65100; /* Tom escuro de laranja para hover */
+    transform: translateY(-4px); /* Efeito de elevação ao passar o mouse */
+}
+
+/* Efeito de foco */
+.btn-option:focus {
+    outline: none; /* Remove o contorno padrão */
+    box-shadow: 0 0 10px rgba(255, 111, 0, 0.5); /* Sombra suave ao focar */
+}
+
+/* Efeito de clique */
+.btn-option:active {
+    transform: translateY(2px); /* Efeito de pressão */
+}
+
+
+
