@@ -171,7 +171,7 @@ body {
     transform: translateY(2px);
 }
 
-/* Menu Hambúrguer e Menu Lateral */
+/*---------- Menu Hambúrguer e Menu Lateral ----------*/
 .hamburger-menu {
     display: none;
 }
@@ -255,3 +255,9 @@ body {
     background-color: var(--secondary-color);
     color: var(--white-color);
 }
+/*---------- Nossos Fundadores ----------*/
+.title-founders{
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
