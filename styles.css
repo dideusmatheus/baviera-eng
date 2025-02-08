@@ -2,7 +2,6 @@
 * {
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
     font-family: 'Poppins', sans-serif;
 }
 
@@ -93,42 +92,46 @@ body {
     width: 100%;
 }
 
-/* Estilos para o botão moderno */
+/* Botão Moderno */
 .btn-option {
-    background-color: var(--primary-color); /* Cor laranja principal */
-    color: var(--white-color); /* Texto branco */
-    font-size: 1rem; /* Tamanho da fonte */
-    padding: 12px 24px; /* Espaçamento interno */
-    border: none; /* Sem borda */
-    border-radius: 30px; /* Bordas arredondadas */
-    cursor: pointer; /* Apontador de clique */
-    transition: background-color 0.3s, transform 0.2s; /* Efeitos suaves de transição */
-    font-weight: 600; /* Texto mais forte */
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 1rem;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: 600;
 }
 
-/* Efeito de hover */
 .btn-option:hover {
-    background-color: #E65100; /* Tom escuro de laranja para hover */
-    transform: translateY(-4px); /* Efeito de elevação ao passar o mouse */
+    background-color: #E65100;
+    transform: translateY(-4px);
 }
 
-/* Efeito de foco */
 .btn-option:focus {
-    outline: none; /* Remove o contorno padrão */
-    box-shadow: 0 0 10px var(--deep-orange); /* Sombra suave ao focar */
+    outline: none;
+    box-shadow: 0 0 10px var(--deep-orange);
 }
 
-/* Efeito de clique */
 .btn-option:active {
-    transform: translateY(2px); /* Efeito de pressão */
+    transform: translateY(2px);
 }
 
-.content-header{
-    position: relative; /* Garante que fiquem sobre a imagem */
-    z-index: 10; /* Garante que fiquem acima do fundo */
-    background: rgba(0, 0, 0, 0.2); /* Fundo escuro com transparência */
-    backdrop-filter: blur(5px); /* Efeito de desfoque */
-    height: calc(100% - 80px);
+/* Header do conteúdo */
+.content-header {
+    position: relative;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .img-logo-content{
@@ -159,16 +162,96 @@ body {
     transform: translateY(-4px);
 }
 
-/* Efeito de foco */
 .btn-header:focus {
-    outline: none; /* Remove o contorno padrão */
-    box-shadow: 0 0 10px var(--deep-orange); /* Sombra suave ao focar */
+    outline: none;
+    box-shadow: 0 0 10px var(--deep-orange);
 }
 
-/* Efeito de clique */
 .btn-header:active {
-    transform: translateY(2px); /* Efeito de pressão */
+    transform: translateY(2px);
 }
 
+/* Menu Hambúrguer e Menu Lateral */
+.hamburger-menu {
+    display: none;
+}
 
+#sideMenu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background-color: var(--dark-gray);
+    z-index: 20;
+    transition: left 0.3s ease;
+}
 
+#sideMenu.open {
+    left: 0;
+}
+
+#sideMenu .option {
+    padding: 15px;
+    border-bottom: 1px solid var(--medium-gray);
+}
+
+#sideMenu .option p {
+    color: var(--white-color);
+    font-size: 1.2rem;
+}
+
+.btn-hamburger-menu {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--white-color);
+    cursor: pointer;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.btn-hamburger-menu:hover {
+    color: var(--primary-color);
+    transform: rotate(90deg);
+}
+
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+    
+    .menu-options {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+    
+    .menu-options {
+        display: none;
+    }
+}
+
+/* Itens do menu lateral */
+.side-menu-option {
+    padding: 15px 20px;
+    color: var(--white-color);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover para os itens do menu */
+.side-menu-option:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+/* Item ativo (selecionado) */
+.side-menu-option.active {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+}
