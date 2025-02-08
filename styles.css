@@ -50,6 +50,7 @@ body {
     top: 0;
     left: 0;
     width: 100vw;
+    margin-right: calc(-1 * (100vw - 100%)); /* Corrige a largura para ignorar a barra de rolagem */
     z-index: 1000;
 }
 
