@@ -66,15 +66,31 @@ body {
 }
 
 .title-option {
-    font-size: 1.2rem;
+    position: relative;
     color: var(--white-color);
+    font-size: 1.2rem;
     margin: 0;
     cursor: pointer;
+    transition: color 0.3s;
 }
 
 .title-option:hover {
     color: var(--primary-color);
-    font-weight: 700;
+}
+
+.title-option::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width 0.3s;
+}
+
+.title-option:hover::after {
+    width: 100%;
 }
 
 /* Estilos para o botão moderno */
@@ -99,7 +115,7 @@ body {
 /* Efeito de foco */
 .btn-option:focus {
     outline: none; /* Remove o contorno padrão */
-    box-shadow: 0 0 10px rgba(255, 111, 0, 0.5); /* Sombra suave ao focar */
+    box-shadow: 0 0 10px var(--deep-orange); /* Sombra suave ao focar */
 }
 
 /* Efeito de clique */
@@ -110,13 +126,9 @@ body {
 .content-header{
     position: relative; /* Garante que fiquem sobre a imagem */
     z-index: 10; /* Garante que fiquem acima do fundo */
-    /* background: rgba(255, 255, 255, 0.8);  */
-    backdrop-filter: blur(5px); /* Deixa o fundo embaçado */
+    background: rgba(0, 0, 0, 0.2); /* Fundo escuro com transparência */
+    backdrop-filter: blur(5px); /* Efeito de desfoque */
     height: calc(100% - 80px);
-}
-
-.teste{
-    /* background-color: red; */
 }
 
 .img-logo-content{
@@ -150,7 +162,7 @@ body {
 /* Efeito de foco */
 .btn-header:focus {
     outline: none; /* Remove o contorno padrão */
-    box-shadow: 0 0 10px rgba(255, 111, 0, 0.5); /* Sombra suave ao focar */
+    box-shadow: 0 0 10px var(--deep-orange); /* Sombra suave ao focar */
 }
 
 /* Efeito de clique */
