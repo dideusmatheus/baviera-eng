@@ -228,15 +228,9 @@ body {
     .menu-options {
         display: none;
     }
-}
 
-@media (max-width: 768px) {
-    .hamburger-menu {
-        display: block;
-    }
-    
-    .menu-options {
-        display: none;
+    .content-header{
+        padding-top: 5rem;
     }
 }
 
