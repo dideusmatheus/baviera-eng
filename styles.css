@@ -266,6 +266,32 @@ body {
     background-color: var(--secondary-color);
     color: var(--white-color);
 }
+
+/*---------- Servicços ----------*/
+.servicos{
+    /* width: 100%; */
+    background-color: var(--dark-gray);
+}
+
+.title-service{
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.img-service{
+    border-radius: 16px;
+}
+
+.title-img-service{
+    color: var(--off-white);
+    font-weight: 700;
+}
+
+.info-service{
+    color: var(--off-white);
+}
+
+
 /*---------- Nossos Fundadores ----------*/
 .title-founders{
     color: var(--primary-color);
