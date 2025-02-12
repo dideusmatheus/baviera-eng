@@ -39,6 +39,23 @@ body {
     overflow-x: hidden;
 }
 
+/* Define o fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+    background-color: var(--dark-gray);
+}
+
+/* Estiliza a própria barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+}
+
+/* Estiliza o "thumb" (a parte que se move) */
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color); /* Cor da parte móvel */
+    border-radius: 5px;
+}
+
+
 /*---------- Menu ----------*/
 .menu {
     height: 5rem;
@@ -347,5 +364,4 @@ body {
     font-weight: bold;
     margin-top: 10px;
 }
-  
 
