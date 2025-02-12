@@ -39,6 +39,7 @@ body {
     overflow-x: hidden;
 }
 
+/*---------- Menu ----------*/
 .menu {
     height: 5rem;
     background-color: var(--dark-gray);
@@ -50,7 +51,7 @@ body {
     top: 0;
     left: 0;
     width: 100vw;
-    margin-right: calc(-1 * (100vw - 100%)); /* Corrige a largura para ignorar a barra de rolagem */
+    margin-right: calc(-1 * (100vw - 100%));
     z-index: 1000;
 }
 
@@ -98,12 +99,12 @@ body {
     width: 100%;
 }
 
-/* Botão Moderno */
+/*---------- Botão Menu ----------*/
 .btn-option {
     background-color: var(--primary-color);
     color: var(--white-color);
     font-size: 1rem;
-    padding: 12px 24px;
+    padding: 8px 20px;
     border: none;
     border-radius: 30px;
     cursor: pointer;
@@ -112,7 +113,7 @@ body {
 }
 
 .btn-option:hover {
-    background-color: #E65100;
+    background-color: var(--secondary-color);
     transform: translateY(-4px);
 }
 
@@ -125,7 +126,19 @@ body {
     transform: translateY(2px);
 }
 
-/* Header do conteúdo */
+/*---------- Imagem Wpp ----------*/
+.wpp {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+  }
+
+.img-wpp{
+    width: 2.5rem;
+}
+
+/*---------- Header do conteúdo ----------*/
 .content-header {
     position: relative;
     z-index: 10;
@@ -235,7 +248,7 @@ body {
     }
 }
 
-/* Itens do menu lateral */
+/*---------- Itens do menu lateral ----------*/
 .side-menu-option {
     padding: 15px 20px;
     color: var(--white-color);
@@ -244,13 +257,11 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* Hover para os itens do menu */
 .side-menu-option:hover {
     background-color: var(--primary-color);
     color: var(--white-color);
 }
 
-/* Item ativo (selecionado) */
 .side-menu-option.active {
     background-color: var(--secondary-color);
     color: var(--white-color);
@@ -259,5 +270,10 @@ body {
 .title-founders{
     color: var(--primary-color);
     font-weight: 700;
+}
+
+/*---------- Footer ----------*/
+.footer{
+    background-color: var(--dark-gray);
 }
 
