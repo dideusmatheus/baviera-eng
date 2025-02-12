@@ -23,10 +23,7 @@
     /* Tons complementares do laranja */
     --light-orange: #FF9E40; /* Laranja Claro */
     --soft-orange: #FFB74D; /* Laranja Suave */
-    --deep-orange: #BF360C; /* Laranja Profundo */
-
-    --white-color: #FFFFFF;
-    
+    --deep-orange: #BF360C; /* Laranja Profundo */    
 }
 
 body {
@@ -46,7 +43,7 @@ body {
 
 /* Estiliza a própria barra de rolagem */
 ::-webkit-scrollbar {
-    width: 10px; /* Largura da barra de rolagem */
+    width: 12px; /* Largura da barra de rolagem */
 }
 
 /* Estiliza o "thumb" (a parte que se move) */
@@ -54,7 +51,6 @@ body {
     background-color: var(--primary-color); /* Cor da parte móvel */
     border-radius: 5px;
 }
-
 
 /*---------- Menu ----------*/
 .menu {
@@ -69,7 +65,7 @@ body {
     left: 0;
     width: 100vw;
     margin-right: calc(-1 * (100vw - 100%));
-    z-index: 1000;
+    z-index: 100;
 }
 
 .img-logo-menu{
