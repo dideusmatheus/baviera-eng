@@ -292,10 +292,16 @@ body {
 }
 
 
-/*---------- Nossos Fundadores ----------*/
+/*---------- Sobre nos ----------*/
 .title-founders{
     color: var(--primary-color);
     font-weight: 700;
+}
+
+.card-img-founders{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
 }
 
 /*---------- Footer ----------*/
