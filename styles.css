@@ -304,6 +304,24 @@ body {
     object-fit: cover;
 }
 
+/*---------- Projetos ----------*/
+.project{
+    background-color: var(--dark-gray);
+}
+.title-projects{
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.title-img-project{
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.info-img-project{
+    color: var(--light-orange);
+}
+
 /*---------- Footer ----------*/
 .footer{
     background-color: var(--dark-gray);
